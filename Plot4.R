@@ -6,7 +6,7 @@ HHPC$Date<-as.Date(HHPC$Date,"%d/%m/%Y")
 HHPCF<-subset(HHPC,Date>="2007/02/01"& Date<="2007/02/02")
 
 #create plot4
-png("Plot4.png")
+png("Plot4.png", width=480, height=480)
 par(mfrow=c(2,2))
 
 with(HHPCF, plot(DateTime, Global_active_power, type="n", xlab="", ylab="Global Active Power"))
